@@ -8,7 +8,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    Ajax('index.json').then(res => {
+    Ajax('xhr/index.json').then(res => {
       this.setState({
         title: res.data.title
       });

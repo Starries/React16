@@ -8,7 +8,7 @@ class News extends Component {
   }
 
   componentDidMount() {
-    Ajax('news/index.json').then(res => {
+    Ajax('xhr/news/index.json').then(res => {
       this.setState({
         title: res.data.title
       });
